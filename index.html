@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aislamiento por 1€ | Eficiencia Energética</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .step-hidden { display: none; }
+        html { scroll-behavior: smooth; }
+        .glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans text-lg selection:bg-brand-500 selection:text-white">
+
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-3xl font-display font-black tracking-tight text-slate-900">
+                Eficiencia<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-emerald-400">Energética</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-slate-600 text-lg">
+                <a href="#inicio" class="hover:text-brand-500 transition-colors">Inicio</a>
+                <a href="#beneficios" class="hover:text-brand-500 transition-colors">Beneficios</a>
+                <a href="#proceso" class="hover:text-brand-500 transition-colors">Proceso</a>
+                <a href="#servicios" class="hover:text-brand-500 transition-colors">Servicios</a>
+            </nav>
+            <div class="flex items-center space-x-5">
+                <a href="https://wa.me/34641374079?text=Quiero%20informaci%C3%B3n%20para%20mi%20aislamiento" target="_blank" class="hidden lg:flex w-12 h-12 items-center justify-center bg-slate-100 rounded-full hover:bg-brand-50 transition-colors group">
+                    <i class="fab fa-whatsapp text-brand-500 group-hover:scale-110 transition-transform text-2xl"></i>
+                </a>
+                <a href="#simulador" class="bg-gradient-to-r from-brand-500 to-emerald-400 hover:from-brand-600 hover:to-emerald-500 text-white px-8 py-3 rounded-full font-bold text-lg transition-all transform hover:scale-105 hover:-translate-y-0.5 shadow-lg shadow-brand-500/30">
+                    Calcula tu ayuda
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative py-28 lg:py-40 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Casa eficiente" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-indigo-950/90 to-slate-900/80 mix-blend-multiply"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-center text-white">
+            <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-6 py-2.5 rounded-full mb-8 border border-white/20">
+                <span class="flex h-3 w-3 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-500"></span>
+                </span>
+                <span class="text-base font-bold tracking-wider uppercase text-brand-50">Subvenciones 2026 Abiertas</span>
+            </div>
+            
+            <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight tracking-tight">
+                Aísla tu casa por <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300 drop-shadow-sm">solo 1€</span> <br class="hidden md:block"> con fondos del gobierno
+            </h1>
+            <p class="text-2xl md:text-3xl mb-14 max-w-4xl mx-auto text-slate-300 font-medium leading-relaxed">
+                Ahorra hasta un 70% en tus facturas financiado por los Certificados de Ahorro Energético (CAE).
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+                <a href="#simulador" class="bg-gradient-to-r from-brand-400 to-brand-500 hover:from-brand-500 hover:to-brand-600 text-slate-950 px-12 py-5 rounded-2xl text-2xl font-black shadow-xl shadow-brand-500/40 transition-all transform hover:scale-105 hover:-translate-y-1 w-full md:w-auto tracking-wide">
+                    VERIFICAR ELEGIBILIDAD
+                </a>
+                <div class="flex items-center space-x-4 bg-slate-900/50 backdrop-blur-sm px-8 py-4 rounded-2xl border border-slate-700/50">
+                    <div class="flex text-yellow-400 text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-base font-bold text-slate-200">4.7/5 (+1.200 clientes)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="py-28 bg-slate-100 relative">
+        <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto glass-panel rounded-3xl shadow-2xl overflow-hidden border border-white">
+                <div class="bg-gradient-to-r from-indigo-600 to-blue-700 py-10 px-10 text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-white opacity-10 rounded-full blur-xl"></div>
+                    <h2 class="font-display text-4xl font-black text-center relative z-10 tracking-tight">Simulador de Elegibilidad</h2>
+                    <p class="text-center text-blue-100 text-lg mt-3 font-medium relative z-10">Comprueba si tu vivienda califica en menos de 1 minuto</p>
+                </div>
+                
+                <form id="multiStepForm" class="p-12">
+                    <div class="step" id="step1">
+                        <label class="block font-display text-3xl font-bold mb-10 text-slate-800 text-center">¿Qué tipo de vivienda tienes?</label>
+                        <div class="grid grid-cols-2 gap-8">
+                            <button type="button" onclick="nextStep(2)" class="bg-white border-2 border-slate-200 p-10 rounded-2xl hover:border-brand-500 hover:shadow-lg hover:shadow-brand-500/20 hover:-translate-y-1 transition-all text-center group">
+                                <i class="fas fa-home text-5xl mb-6 text-slate-300 group-hover:text-brand-500 transition-colors"></i>
+                                <span class="block font-bold text-xl text-slate-700 group-hover:text-brand-600">Casa Unifamiliar</span>
+                            </button>
+                            <button type="button" onclick="nextStep(2)" class="bg-white border-2 border-slate-200 p-10 rounded-2xl hover:border-brand-500 hover:shadow-lg hover:shadow-brand-500/20 hover:-translate-y-1 transition-all text-center group">
+                                <i class="fas fa-building text-5xl mb-6 text-slate-300 group-hover:text-brand-500 transition-colors"></i>
+                                <span class="block font-bold text-xl text-slate-700 group-hover:text-brand-600">Piso / Apartamento</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="step step-hidden" id="step2">
+                        <label class="block font-display text-3xl font-bold mb-10 text-slate-800 text-center">¿Antigüedad de la vivienda?</label>
+                        <div class="grid grid-cols-1 gap-6">
+                            <button type="button" onclick="nextStep(3)" class="bg-white border-2 border-slate-200 p-6 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 text-left font-bold px-10 transition-all text-xl shadow-sm">Más de 20 años</button>
+                            <button type="button" onclick="nextStep(3)" class="bg-white border-2 border-slate-200 p-6 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 text-left font-bold px-10 transition-all text-xl shadow-sm">Menos de 20 años</button>
+                        </div>
+                    </div>
+
+                    <div class="step step-hidden" id="step3">
+                        <label class="block font-display text-3xl font-bold mb-10 text-slate-800 text-center">Superficie habitable aproximada</label>
+                        <div class="grid grid-cols-1 gap-6">
+                            <button type="button" onclick="nextStep(4)" class="bg-white border-2 border-slate-200 p-6 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 text-left font-bold px-10 transition-all text-xl shadow-sm">Menos de 75 m²</button>
+                            <button type="button" onclick="nextStep(4)" class="bg-white border-2 border-slate-200 p-6 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 text-left font-bold px-10 transition-all text-xl shadow-sm">Entre 75 m² y 120 m²</button>
+                            <button type="button" onclick="nextStep(4)" class="bg-white border-2 border-slate-200 p-6 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 text-left font-bold px-10 transition-all text-xl shadow-sm">Más de 120 m²</button>
+                        </div>
+                    </div>
+
+                    <div class="step step-hidden" id="step4">
+                        <label class="block font-display text-3xl font-bold mb-10 text-slate-800 text-center">¿Cuál es tu situación?</label>
+                        <div class="grid grid-cols-2 gap-8">
+                            <button type="button" onclick="nextStep(5)" class="bg-white border-2 border-slate-200 p-8 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 font-bold transition-all text-2xl shadow-sm">Propietario</button>
+                            <button type="button" onclick="nextStep(5)" class="bg-white border-2 border-slate-200 p-8 rounded-xl hover:border-brand-500 hover:bg-brand-50 hover:text-brand-700 font-bold transition-all text-2xl shadow-sm">Inquilino</button>
+                        </div>
+                    </div>
+
+                    <div class="step step-hidden" id="step5">
+                        <label class="block font-display text-3xl font-bold mb-10 text-slate-800 text-center">¡Último paso! ¿Dónde enviamos los resultados?</label>
+                        <div class="space-y-6">
+                            <input type="text" placeholder="Nombre completo" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                            <input type="tel" placeholder="Teléfono" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                            <div class="grid grid-cols-2 gap-6">
+                                <input type="text" placeholder="Código Postal" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                                <input type="email" placeholder="Email" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                            </div>
+                            <button type="submit" class="w-full mt-6 bg-gradient-to-r from-brand-500 to-emerald-400 hover:from-brand-600 hover:to-emerald-500 text-white font-black py-6 rounded-xl text-2xl shadow-xl shadow-brand-500/30 transform hover:-translate-y-1 transition-all tracking-wide">
+                                VER MI RESULTADO AHORA
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-white relative overflow-hidden">
+        <div class="absolute -right-64 -top-64 w-96 h-96 bg-brand-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-wrap items-center -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-16 lg:mb-0 relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-400 to-indigo-500 rounded-3xl transform translate-x-6 translate-y-6 opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop" alt="Graficos ahorro" class="rounded-3xl shadow-2xl relative z-10">
+                </div>
+                <div class="w-full lg:w-1/2 px-4 lg:pl-20">
+                    <h2 class="font-display text-5xl md:text-6xl font-black mb-10 text-slate-900 leading-tight">
+                        ¿Por qué solo 1€? <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-brand-500">No es magia, es la ley.</span>
+                    </h2>
+                    <div class="space-y-10 mt-12">
+                        <div class="flex items-start group">
+                            <div class="bg-indigo-50 p-5 rounded-2xl mr-8 group-hover:bg-indigo-600 transition-colors duration-300">
+                                <i class="fas fa-gavel text-3xl text-indigo-600 group-hover:text-white transition-colors duration-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-3xl mb-3 text-slate-800">Sistema CAE (RD 36/2023)</h4>
+                                <p class="text-slate-600 text-xl leading-relaxed">Las energéticas están obligadas por ley a financiar estos proyectos para cumplir objetivos nacionales de eficiencia.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start group">
+                            <div class="bg-emerald-50 p-5 rounded-2xl mr-8 group-hover:bg-emerald-500 transition-colors duration-300">
+                                <i class="fas fa-euro-sign text-3xl text-emerald-600 group-hover:text-white transition-colors duration-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-3xl mb-3 text-slate-800">Fondos Europeos</h4>
+                                <p class="text-slate-600 text-xl leading-relaxed">Financiación directa de los fondos Next Generation EU para la descarbonización de hogares.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start group">
+                            <div class="bg-blue-50 p-5 rounded-2xl mr-8 group-hover:bg-blue-600 transition-colors duration-300">
+                                <i class="fas fa-file-invoice text-3xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-3xl mb-3 text-slate-800">Gestión Integral</h4>
+                                <p class="text-slate-600 text-xl leading-relaxed">Nosotros adelantamos el capital y gestionamos el papeleo. Tú solo firmas el éxito del proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-28 bg-slate-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-display text-5xl md:text-6xl font-black mb-20">Lo que ganas <span class="text-brand-400">hoy mismo</span></h2>
+            <div class="grid md:grid-cols-4 gap-10">
+                <div class="bg-slate-800/50 backdrop-blur-sm p-12 rounded-3xl border border-slate-700 hover:bg-slate-800 hover:border-brand-500 hover:-translate-y-2 transition-all duration-300 group shadow-2xl shadow-slate-950/50">
+                    <div class="w-20 h-20 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:bg-blue-500/40 transition-colors">
+                        <i class="fas fa-chart-line text-4xl text-blue-400"></i>
+                    </div>
+                    <h4 class="font-display font-bold text-3xl mb-5">Ahorro Drástico</h4>
+                    <p class="text-slate-400 text-xl leading-relaxed">Reduce tus facturas entre 300€ y 1.500€ anuales.</p>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm p-12 rounded-3xl border border-slate-700 hover:bg-slate-800 hover:border-red-500 hover:-translate-y-2 transition-all duration-300 group shadow-2xl shadow-slate-950/50">
+                    <div class="w-20 h-20 bg-red-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:bg-red-500/40 transition-colors">
+                        <i class="fas fa-thermometer-half text-4xl text-red-400"></i>
+                    </div>
+                    <h4 class="font-display font-bold text-3xl mb-5">Confort Térmico</h4>
+                    <p class="text-slate-400 text-xl leading-relaxed">Casa cálida en invierno y fresca en verano sin esfuerzo.</p>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm p-12 rounded-3xl border border-slate-700 hover:bg-slate-800 hover:border-purple-500 hover:-translate-y-2 transition-all duration-300 group shadow-2xl shadow-slate-950/50">
+                    <div class="w-20 h-20 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:bg-purple-500/40 transition-colors">
+                        <i class="fas fa-volume-mute text-4xl text-purple-400"></i>
+                    </div>
+                    <h4 class="font-display font-bold text-3xl mb-5">Adiós al Ruido</h4>
+                    <p class="text-slate-400 text-xl leading-relaxed">Aislamiento acústico de serie para mayor tranquilidad.</p>
+                </div>
+                <div class="bg-slate-800/50 backdrop-blur-sm p-12 rounded-3xl border border-slate-700 hover:bg-slate-800 hover:border-brand-500 hover:-translate-y-2 transition-all duration-300 group shadow-2xl shadow-slate-950/50">
+                    <div class="w-20 h-20 bg-brand-500/20 rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:bg-brand-500/40 transition-colors">
+                        <i class="fas fa-leaf text-4xl text-brand-400"></i>
+                    </div>
+                    <h4 class="font-display font-bold text-3xl mb-5">Sostenibilidad</h4>
+                    <p class="text-slate-400 text-xl leading-relaxed">Mejora tu certificado energético y revaloriza tu casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso" class="py-28 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-5xl md:text-6xl font-black mb-24 text-center text-slate-900">Tu camino al <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-brand-500">ahorro</span></h2>
+            
+            <div class="grid md:grid-cols-4 gap-10 relative">
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-1.5 bg-gradient-to-r from-slate-200 via-brand-200 to-slate-200 -z-10"></div>
+                
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-slate-100 group-hover:border-blue-500 text-slate-800 group-hover:text-blue-600 rounded-full flex items-center justify-center font-display text-4xl font-black mx-auto mb-8 shadow-xl transition-all duration-300 group-hover:-translate-y-2">1</div>
+                    <h4 class="font-display font-bold text-3xl mb-4 text-slate-800">Simulación</h4>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed">Rellenas el formulario online en 60 segundos.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-slate-100 group-hover:border-indigo-500 text-slate-800 group-hover:text-indigo-600 rounded-full flex items-center justify-center font-display text-4xl font-black mx-auto mb-8 shadow-xl transition-all duration-300 group-hover:-translate-y-2">2</div>
+                    <h4 class="font-display font-bold text-3xl mb-4 text-slate-800">Validación</h4>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed">Visita técnica gratuita para confirmar viabilidad.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-white border-4 border-slate-100 group-hover:border-teal-500 text-slate-800 group-hover:text-teal-600 rounded-full flex items-center justify-center font-display text-4xl font-black mx-auto mb-8 shadow-xl transition-all duration-300 group-hover:-translate-y-2">3</div>
+                    <h4 class="font-display font-bold text-3xl mb-4 text-slate-800">Instalación</h4>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed">Ejecución en 1-2 días sin obras molestas.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-brand-400 to-brand-600 text-white rounded-full flex items-center justify-center font-display text-4xl font-black mx-auto mb-8 shadow-xl shadow-brand-500/40 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-110">4</div>
+                    <h4 class="font-display font-bold text-3xl mb-4 text-slate-800">Disfrute</h4>
+                    <p class="text-slate-600 text-lg font-medium leading-relaxed">Solo pagas 1€ y empiezas a ahorrar cada mes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-28 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display text-5xl md:text-6xl font-black mb-20 text-center text-blue-400">Nuestros Servicios Especializados</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                
+                <div class="bg-blue-800 p-12 rounded-3xl flex flex-col items-center justify-center text-center shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <i class="fas fa-home text-7xl mb-8 text-blue-300"></i>
+                    <h4 class="font-display font-bold text-3xl mb-5">Buhardillas y Áticos</h4>
+                    <p class="text-blue-100 text-xl leading-relaxed">Lana mineral soplada para evitar pérdidas térmicas por el techo de forma rápida y limpia.</p>
+                </div>
+
+                <div class="bg-green-700 p-12 rounded-3xl flex flex-col items-center justify-center text-center shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <i class="fas fa-border-all text-7xl mb-8 text-green-300"></i>
+                    <h4 class="font-display font-bold text-3xl mb-5">Inyección de Cámaras</h4>
+                    <p class="text-green-100 text-xl leading-relaxed">Aislamiento en muros huecos, suelos y techos sin necesidad de reformas ni obras complejas.</p>
+                </div>
+
+                <div class="bg-indigo-800 p-12 rounded-3xl flex flex-col items-center justify-center text-center shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <i class="fas fa-fan text-7xl mb-8 text-indigo-300"></i>
+                    <h4 class="font-display font-bold text-3xl mb-5">Bombas de Calor</h4>
+                    <p class="text-indigo-100 text-xl leading-relaxed">Instalación de equipos de aerotermia de última generación, subvencionados al 100%.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="font-display text-5xl md:text-6xl font-black mb-20 text-slate-900">Lo que dicen nuestros <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">clientes</span></h2>
+                <div class="grid md:grid-cols-2 gap-10 text-left">
+                    <div class="bg-white p-12 rounded-3xl border-2 border-slate-100 shadow-xl shadow-slate-200/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-8 text-8xl text-slate-100 font-serif leading-none">"</div>
+                        <div class="flex text-yellow-400 mb-8 text-2xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-8 text-slate-600 text-2xl italic relative z-10 leading-relaxed">"Al principio desconfiaba de lo del euro, pero me explicaron el tema de las subvenciones y decidí probar. Este invierno no hemos encendido casi la calefacción. Un acierto total."</p>
+                        <div class="font-display font-bold text-2xl text-slate-900">— Carlos M., Madrid</div>
+                    </div>
+                    <div class="bg-white p-12 rounded-3xl border-2 border-slate-100 shadow-xl shadow-slate-200/50 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-8 text-8xl text-slate-100 font-serif leading-none">"</div>
+                        <div class="flex text-yellow-400 mb-8 text-2xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-8 text-slate-600 text-2xl italic relative z-10 leading-relaxed">"Rápidos, limpios y se encargaron de todo el papeleo. Literalmente pagué 1€ con tarjeta cuando terminaron. Es increíble pero real, 100% recomendados."</p>
+                        <div class="font-display font-bold text-2xl text-slate-900">— Laura G., Valencia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="font-display text-5xl font-black mb-20 text-center text-slate-900">Preguntas Frecuentes</h2>
+            <div class="space-y-8">
+                <details class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-200 group transition-all duration-300 open:bg-white open:shadow-lg open:border-brand-200">
+                    <summary class="font-display font-bold text-2xl cursor-pointer list-none flex justify-between items-center text-slate-800 group-open:text-brand-600 transition-colors">
+                        ¿Qué es exactamente el aislamiento por 1€?
+                        <span class="bg-slate-200 text-slate-600 rounded-full w-10 h-10 flex items-center justify-center group-open:bg-brand-100 group-open:text-brand-600 transition-colors">
+                            <i class="fas fa-plus group-open:hidden"></i>
+                            <i class="fas fa-minus hidden group-open:block"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-8 text-slate-600 text-xl leading-relaxed border-t border-slate-100 pt-8">Es un programa basado en los Certificados de Ahorro Energético (CAE) donde las empresas energéticas financian la obra para cumplir con su obligación legal de ahorro, eliminando el coste para el usuario.</p>
+                </details>
+                <details class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-200 group transition-all duration-300 open:bg-white open:shadow-lg open:border-brand-200">
+                    <summary class="font-display font-bold text-2xl cursor-pointer list-none flex justify-between items-center text-slate-800 group-open:text-brand-600 transition-colors">
+                        ¿Cómo sé si soy elegible?
+                        <span class="bg-slate-200 text-slate-600 rounded-full w-10 h-10 flex items-center justify-center group-open:bg-brand-100 group-open:text-brand-600 transition-colors">
+                            <i class="fas fa-plus group-open:hidden"></i>
+                            <i class="fas fa-minus hidden group-open:block"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-8 text-slate-600 text-xl leading-relaxed border-t border-slate-100 pt-8">Depende de la antigüedad de la casa y la zona climática. Nuestra simulación online te dará una respuesta preliminar en segundos.</p>
+                </details>
+                <details class="bg-slate-50 p-8 rounded-3xl shadow-sm border border-slate-200 group transition-all duration-300 open:bg-white open:shadow-lg open:border-brand-200">
+                    <summary class="font-display font-bold text-2xl cursor-pointer list-none flex justify-between items-center text-slate-800 group-open:text-brand-600 transition-colors">
+                        ¿Qué materiales se utilizan?
+                        <span class="bg-slate-200 text-slate-600 rounded-full w-10 h-10 flex items-center justify-center group-open:bg-brand-100 group-open:text-brand-600 transition-colors">
+                            <i class="fas fa-plus group-open:hidden"></i>
+                            <i class="fas fa-minus hidden group-open:block"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-8 text-slate-600 text-xl leading-relaxed border-t border-slate-100 pt-8">Principalmente lana mineral de roca, lana de vidrio blanca o celulosa, dependiendo de las necesidades técnicas de la vivienda.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-28 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="bg-white p-12 lg:p-16 rounded-3xl border-2 border-slate-100 shadow-2xl shadow-slate-200/50">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-4xl md:text-5xl font-black mb-6 text-slate-900">¿Tienes dudas? <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-brand-500">Contáctanos</span></h2>
+                    <p class="text-slate-600 text-xl font-medium">Rellena el formulario o háblanos directamente por WhatsApp para una atención inmediata.</p>
+                </div>
+                
+                <form id="contactForm" class="space-y-8" onsubmit="enviarFormulario(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-3 text-lg">Nombre completo</label>
+                            <input type="text" id="contactNombre" placeholder="Ej. Juan Pérez" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-3 text-lg">Teléfono de contacto</label>
+                            <input type="tel" id="contactTel" placeholder="Ej. 600 000 000" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-3 text-lg">Correo electrónico</label>
+                        <input type="email" id="contactEmail" placeholder="tu@email.com" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-3 text-lg">Tu mensaje</label>
+                        <textarea id="contactMsg" placeholder="¿En qué podemos ayudarte?" rows="4" class="w-full p-6 text-lg bg-slate-50 border-2 border-slate-200 rounded-xl focus:border-brand-500 focus:bg-white outline-none transition-colors font-medium resize-none"></textarea>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 pt-4">
+                        <button type="submit" class="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-black py-6 rounded-xl text-2xl shadow-xl shadow-blue-500/30 transform hover:-translate-y-1 transition-all tracking-wide text-center">
+                            ENVIAR MENSAJE
+                        </button>
+                        <button type="button" onclick="enviarWhatsappDirecto()" class="flex-1 bg-brand-500 hover:bg-brand-600 text-white font-black py-6 rounded-xl text-2xl shadow-xl shadow-brand-500/30 transform hover:-translate-y-1 transition-all tracking-wide text-center flex items-center justify-center">
+                            <i class="fab fa-whatsapp mr-3 text-3xl"></i> WHATSAPP
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-20 border-t-[8px] border-brand-500">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between items-start">
+                <div class="w-full md:w-1/3 mb-12 md:mb-0">
+                    <div class="text-4xl font-display font-black text-white mb-8">Eficiencia<span class="text-brand-500">Energética</span></div>
+                    <p class="text-slate-500 text-lg font-medium leading-relaxed max-w-sm">Líderes en gestión de Certificados de Ahorro Energético y rehabilitación térmica de viviendas en España.</p>
+                </div>
+                <div class="w-full md:w-1/3 text-center mb-12 md:mb-0">
+                    <div class="flex justify-center space-x-6 text-3xl">
+                        <a href="https://www.facebook.com/profile.php?id=61583242352585" target="_blank" rel="noopener noreferrer" class="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center hover:bg-brand-500 hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/eficiencia.energy.oficial/" target="_blank" rel="noopener noreferrer" class="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center hover:bg-brand-500 hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center hover:bg-brand-500 hover:text-white transition-all transform hover:-translate-y-1"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 text-right">
+                    <div class="bg-slate-900 p-8 rounded-3xl inline-block text-left">
+                        <p class="mb-4 text-lg font-medium"><i class="fas fa-map-marker-alt mr-3 text-brand-500"></i>Calle Hermosilla 48, Salanmanca, Madrid, 28001</p>
+                        <a href="https://wa.me/34641374079?text=Quiero%20informaci%C3%B3n%20para%20mi%20aislamiento" target="_blank" class="block text-lg font-medium text-white hover:text-brand-400 transition-colors mt-4">
+                            <i class="fab fa-whatsapp mr-3 text-brand-500"></i>641 37 40 79
+                        </a>
+                    </div>
+                    <div class="space-x-8 mt-10 text-base font-medium">
+                        <a href="#" class="hover:text-brand-400 transition-colors">Privacidad</a>
+                        <a href="#" class="hover:text-brand-400 transition-colors">Aviso Legal</a>
+                        <a href="#" class="hover:text-brand-400 transition-colors">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800/50 mt-20 pt-10 text-center text-base font-medium text-slate-500">
+                © 2026 Eficiencia Energética S.L. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simulador multi-step
+        function nextStep(stepNum) {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => step.classList.add('step-hidden'));
+            document.getElementById('step' + stepNum).classList.remove('step-hidden');
+            
+            document.getElementById('simulador').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Lógica de Formulario a WhatsApp
+        function formatearDatos() {
+            const nombre = document.getElementById('contactNombre').value.trim();
+            const tel = document.getElementById('contactTel').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const msg = document.getElementById('contactMsg').value.trim();
+
+            if (!nombre && !tel && !email && !msg) return null;
+
+            let texto = "Hola, dejo mis datos para solicitar más información:\n\n";
+            if(nombre) texto += `*Nombre:* ${nombre}\n`;
+            if(tel) texto += `*Teléfono:* ${tel}\n`;
+            if(email) texto += `*Email:* ${email}\n`;
+            if(msg) texto += `*Mensaje:* ${msg}`;
+            
+            return texto;
+        }
+
+        function enviarFormulario(e) {
+            e.preventDefault(); // Evita recargar la página
+            const textoFormateado = formatearDatos();
+            const textoFinal = textoFormateado ? textoFormateado : 'Quiero información para mi aislamiento';
+            const url = 'https://wa.me/34641374079?text=' + encodeURIComponent(textoFinal);
+            window.open(url, '_blank');
+        }
+
+        function enviarWhatsappDirecto() {
+            const textoFormateado = formatearDatos();
+            const textoFinal = textoFormateado ? textoFormateado : 'Quiero información para mi aislamiento';
+            const url = 'https://wa.me/34641374079?text=' + encodeURIComponent(textoFinal);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
